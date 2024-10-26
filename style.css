@@ -333,3 +333,64 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 426px) {
+  .top-nav {
+    padding: 10px 20px;
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .nav-links {
+    font-size: 14px;
+    column-gap: 10px;
+  }
+
+  .logo-wrapper {
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 150px;
+      height: 150px;
+    }
+
+    img:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .contact-container {
+    padding-top: 40px;
+    height: 100%;
+    flex-direction: column-reverse;
+
+    .info-wrapper {
+      padding: 0 40px 40px;
+      width: 100%;
+    }
+  }
+
+  .footer-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 40px;
+    .item {
+      text-align: left;
+      align-items: flex-start;
+      width: 100%;
+    }
+  }
+
+  .footer-wrapper {
+    .item:first-child {
+      grid-column: span 1;
+    }
+    .item:first-child,
+    .item:last-child {
+      padding-left: 0;
+    }
+  }
+}
